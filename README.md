@@ -22,6 +22,11 @@ Web框架：Spring Boot 2.6.3 \
 加密库：java.security包 \
 定时任务：Scheduled注解
 
+#### 运行环境
+Linux服务器
+CentOS7.6操作系统
+Docker容器化部署
+
 #### 网站链接
 http://1.12.253.195
 
