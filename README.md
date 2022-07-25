@@ -27,7 +27,7 @@ http://1.12.253.195
 
 #### 项目部分截图
 ![前台展示网站](https://gitee.com/htx1316/images/raw/master/bingtufunimgs/%E5%89%8D%E5%8F%B0%E5%B1%95%E7%A4%BA%E7%BD%91%E7%AB%99.png)
-![后台管理系统登陆页](https://gitee.com/htx1316/images/raw/master/bingtufunimgs/%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%99%BB%E9%99%86%E9%A1%B5.png)
+![后台登陆页](https://gitee.com/htx1316/images/raw/master/bingtufunimgs/%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%99%BB%E9%99%86%E9%A1%B5.png)
 ![后台管理系统](https://gitee.com/htx1316/images/raw/master/bingtufunimgs/%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F.png)  
 
 
