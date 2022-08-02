@@ -28,7 +28,7 @@ CentOS7.6操作系统 \
 Docker容器化部署
 
 #### 网站链接
-http://1.12.253.195
+http://bingtufun.club
 
 #### 项目部分截图
 ![https://github.com/ArrowRa1n/MyImages/blob/main/bingtufunimgs/%E5%89%8D%E5%8F%B0%E5%B1%95%E7%A4%BA%E7%BD%91%E7%AB%99.png](https://github.com/ArrowRa1n/MyImages/raw/main/bingtufunimgs/%E5%89%8D%E5%8F%B0%E5%B1%95%E7%A4%BA%E7%BD%91%E7%AB%99.png)
