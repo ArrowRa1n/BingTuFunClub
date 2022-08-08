@@ -1,10 +1,10 @@
 # 冰兔w FunClub
 
 #### 前言
-本人的兴趣爱好之一是听音乐，有次在bilibili弹幕网的音乐分区看到了一名新人投稿者“冰兔w”的作品，听完以后非常喜欢她的唱法。由于自己所学的是计算机专业，遂结合专业知识来创作有关“冰兔w”的个人项目作品。
+本人的兴趣爱好之一是听音乐，有次在bilibili弹幕网的音乐分区看到了一名新人投稿者“冰兔w”的作品，听完以后非常喜欢她的唱法。由于自己所学的是计算机专业，遂结合专业知识来创作有关“冰兔w”的个人项目作品。\
 
 #### 项目介绍
-“冰兔w FunClub”项目为个人作品，基于B站UP主“冰兔w”所创作的个人非商用粉丝向PC端网站。本项目分为前台展示网站和后台管理系统两个子项目组成，两个子项目都是采用的前后端分离的架构模式，前端使用的Vue开发框架，后端使用SpringBoot开发框架。其中，前台展示网站用来把数据转换成可视化的页面进行展览，后台管理系统用来对数据库的数据进行各种操作。
+“冰兔w FunClub”项目为个人作品，基于B站UP主“冰兔w”所创作的个人非商用粉丝向PC端网站。本项目分为前台展示网站和后台管理系统两个子项目组成，两个子项目都是采用的前后端分离的架构模式，前端使用的Vue开发框架，后端使用SpringBoot开发框架。其中，前台展示网站用来把数据转换成可视化的页面进行展览，后台管理系统用来对数据库的数据进行各种操作。\
 
 #### 前端技术架构
 前端框架：Vue3 \
@@ -13,7 +13,7 @@
 组件通信：Vuex \
 组件库：element-ui \
 路由：Vue-router \
-第三方加密库：js-sha256、jsencrypt 
+第三方加密库：js-sha256、jsencrypt\ 
 
 #### 后端技术架构
 Web框架：Spring Boot 2.6.3 \
@@ -23,21 +23,22 @@ Web框架：Spring Boot 2.6.3 \
 权限拦截：Interceptor拦截器 \
 异常参数过滤：Filter过滤器 \
 加密库：java.security包 \
-定时任务：Scheduled注解
+定时任务：Scheduled注解\
 
 #### 运行环境
 腾讯云服务器 \
 CentOS7.6操作系统 \
-Docker容器化部署
+Docker容器化部署\
 
 #### 网站链接
 http://bingtufun.club
+\
 
 #### 项目部分截图
 ![https://github.com/ArrowRa1n/MyImages/blob/main/bingtufunimgs/%E5%89%8D%E5%8F%B0%E5%B1%95%E7%A4%BA%E7%BD%91%E7%AB%99.png](https://github.com/ArrowRa1n/MyImages/raw/main/bingtufunimgs/%E5%89%8D%E5%8F%B0%E5%B1%95%E7%A4%BA%E7%BD%91%E7%AB%99.png)
 ![https://github.com/ArrowRa1n/MyImages/blob/main/bingtufunimgs/%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%99%BB%E9%99%86%E9%A1%B5.png](https://github.com/ArrowRa1n/MyImages/raw/main/bingtufunimgs/%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%99%BB%E9%99%86%E9%A1%B5.png)
 ![https://github.com/ArrowRa1n/MyImages/blob/main/bingtufunimgs/%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F.png](https://github.com/ArrowRa1n/MyImages/raw/main/bingtufunimgs/%E5%90%8E%E5%8F%B0%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F.png)  
-
+\
 
 #### 项目部分代码
 RSA工具类
@@ -78,6 +79,7 @@ public class RSAUtil {
     }
 }
 ```
+\
 SHA-256工具类
 ```java
 public final class SHA256Util {
