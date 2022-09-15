@@ -11,7 +11,7 @@
 组件通信：Vuex \
 组件库：element-ui \
 路由：Vue-router \
-第三方加密库：js-sha256、jsencrypt\
+第三方加密库：js-sha256、jsencrypt
 
 #### 后端技术架构
 Web框架：Spring Boot 2.6.3 \
