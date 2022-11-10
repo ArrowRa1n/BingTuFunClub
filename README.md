@@ -43,7 +43,7 @@ https://bingtufun.club
 RSA工具类
 ```java
 public class RSAUtil {
-    //获取RSA密钥对，0公1私
+    //获取RSA密钥对，0为公钥，1为私钥
     public  static Map<Integer, String> genKeyPair() throws NoSuchAlgorithmException {
         Map<Integer, String> keyMap=new HashMap<>();
         KeyPairGenerator keyPool = KeyPairGenerator.getInstance("RSA");
@@ -98,14 +98,16 @@ public final class SHA256Util {
             e.printStackTrace();
         }
     }
-
+    
+    //获取随机盐
     public static byte[] getSalt(){
         byte[] salt=new byte[LEN];
         new SecureRandom().nextBytes(salt);
         return salt;
     }
-
-    public static byte[] encryptReturnByte(String password,byte[] salt) {
+    
+    //密码加盐 返回字节数组
+    private static byte[] encryptReturnByte(String password,byte[] salt) {
         Objects.requireNonNull(password, "password must not be null.");
         sha256.update(salt);
         sha256.update(password.getBytes());
@@ -115,8 +117,9 @@ public final class SHA256Util {
         System.arraycopy(digest, 0, encryptBytes, LEN, digest.length);
         return encryptBytes;
     }
-
-    public static byte[] encryptReturnByteAuto(String password) {
+    
+    //无需传盐加密密码  返回字节数组
+    private static byte[] encryptReturnByteAuto(String password) {
         Objects.requireNonNull(password, "password must not be null.");
         byte[] salt = getSalt();
         sha256.update(salt);
@@ -127,17 +130,20 @@ public final class SHA256Util {
         System.arraycopy(digest, 0, encryptBytes, LEN, digest.length);
         return encryptBytes;
     }
-
+    
+    //调用encryptReturnByte进行处理，返回加密后的密码字符串
     public static String encryptReturnString(String password,byte[] salt) {
         byte[] bytes = encryptReturnByte(password,salt);
         return Base64.getEncoder().encodeToString(bytes);
     }
 
+    //调用encryptReturnByteAuto进行处理，返回加密后的密码字符串
     public static String encryptReturnString(String password) {
         byte[] bytes = encryptReturnByteAuto(password);
         return Base64.getEncoder().encodeToString(bytes);
     }
-
+    
+    //校验前端加密后传输的密码是否等于盐+密码
     public static boolean validate(String password,byte[] salt, String encryptPassword) {
         if (password == null || password.isEmpty() || encryptPassword == null ||
                 encryptPassword.isEmpty()||salt==null) {
